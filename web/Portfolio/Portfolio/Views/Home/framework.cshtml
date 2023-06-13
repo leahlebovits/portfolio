@@ -1,0 +1,39 @@
+﻿@using PortfolioBizObjects
+@model bizDevSubSection
+
+@if (Model.DevSubSectionCode == "cpuframework")
+{
+    <img class="w-100 border border-danger p-1 ml-1" src="~/images/cpuframework.png" />
+}
+
+@if (Model.ProgrammingCode != "")
+{
+    <div class="row mt-2">
+        <div class="col-md-12 text-center">
+            <button id="btnSeeCode" class="btn btn-primary">See Code</button>
+            <button id="btnHideCode" class="btn btn-primary">Hide Code</button>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-12" id="code">
+            <div class="border border-primary bg-white p-2" style="font-family:Consolas"> @Html.Raw(AppUtility.AddStyleToCode(Model.ProgrammingCode))</div>
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#code").hide();
+        $("#btnHideCode").hide();
+        $("#btnSeeCode").click(function () {
+            $("#code").show();
+            $("#btnSeeCode").hide();
+            $("#btnHideCode").show();
+        })
+        $("#btnHideCode").click(function () {
+            $("#code").hide();
+            $("#btnSeeCode").show();
+            $("#btnHideCode").hide();
+        })
+    })
+</script>

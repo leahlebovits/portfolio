@@ -1,0 +1,6 @@
+C:\CPU2020\Zilber\Architecture\cpuframework\bin\Release\cpuframework.dll
+C:\CPU2020\Zilber\Architecture\cpuframework\bin\Release\cpuframework.pdb
+C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.csprojAssemblyReference.cache
+C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.dll
+C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.pdb
+C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.csproj.CoreCompileInputs.cache

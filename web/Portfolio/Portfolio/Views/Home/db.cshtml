@@ -1,0 +1,88 @@
+﻿@using PortfolioBizObjects
+@model bizDevSubSection
+ <style>
+     .code{
+         font-family:Consolas;
+         font-size:large;
+     }
+ </style>
+
+<h1>@Model.DevSubSectionDesc</h1>
+
+<ul class="nav nav-pills mb-1">
+    <li class="nav-item">
+        <a class="nav-link active bg-primary text-light" data-toggle="tab" href="#image">View Schema Design</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link bg-primary text-light" data-toggle="tab" href="#schema">See SQL Script</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link bg-primary text-light" data-toggle="tab" href="#trysql">Try SQL Queries</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active container" id="image">
+        <img class="w-100" src="~/images/@(Model.DevSubSectionCode).png" />
+    </div>
+    <div class="tab-pane container" id="schema">
+        <div class="border border-primary bg-white p-2" style="font-family:Consolas">@Html.Raw(AppUtility.SetSQLCSS(Model.{ }, true))</div>
+    </div>
+    <div class="tab-pane container " id="trysql">
+        <div class="row">
+            <div class="col-md-5 mt-2">
+                @Html.DropDownList(
+                    name: "lstquery",
+                    selectList: new SelectList(
+                     items: Model.SampleQueries,
+                     dataValueField: "Query",
+                     dataTextField: "QueryCaption"
+                    
+                     ),
+                htmlAttributes: new { @id="QueryDropdown", @class = "form-control" }
+                
+                )
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="cold-md-12">
+                <textarea cols="150" rows="7" id="txtquery" class="form-control code"></textarea>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-md-3">
+                <button id="btnrun" class="btn btn-outline-danger">Run SQL</button>
+                <div class="col-md-3">
+                    <span id="spn" class="spinner-border text-success" style="display:none"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="dvresults"></div>
+        </div>
+    </div>
+</div>
+<script>
+    var dbval = "@Model.DevSubSectionCode"
+    $(document).ready(function () {
+      $("#QueryDropdown").change(function () {
+          var qdropdown = $("#QueryDropdown :selected").val();
+          $("#txtquery").text(qdropdown); 
+      })
+        $("#btnrun").click(function () {
+            var sqlstatement = $("#txtquery").val()
+            var obj = { "db": dbval, "sqlstatement": sqlstatement }
+           $("#spn").show();
+            $.ajax({
+                url: "/Home/RunSQL",
+                data: obj,
+                success: function (data) {
+                    $("#dvresults").html(data)
+                    $("#spn").hide();
+                }
+            })
+        })
+
+    })
+</script>
+

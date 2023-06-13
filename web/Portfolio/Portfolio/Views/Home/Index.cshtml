@@ -1,0 +1,34 @@
+﻿@using PortfolioBizObjects
+
+@model  List<bizDevSection>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row m-2">
+    <div class="col-md-12">
+        <div >
+            <h1 class="d-flex justify-content-center" >Leah Zilber Software Portfolio</h1>
+            <p class="lead text-center" >I am a software developer who was trained in CPU Code School to produce top quality software. I am proficient in the full stack of software development, from requirements gathering to implementation of database, middle tier, and front end. This is done through the use of SQL Server, C#, ASP.Net, HTML, Bootstrap, Java Script, JQuery and more. Databases and websites are deployed to the cloud using Microsoft Azure. In fact, this website portfolio uses all the aforementioned technologies as described in each section. Go ahead take a look...</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-deck">
+            @foreach (bizDevSection d in Model)
+            {
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center text-center text-primary bg-danger" style="height:70px">
+                        <h5>@d.DevSectionDesc</h5>
+                    </div>
+                    <div class="card-body text-center">@d.DevSectionMiniBlurb</div>
+                    <div class="card-footer h-25"> @Html.ActionLink("See More", "DevSection", new { DevSectionCode = @d.DevSectionCode }, new { @class = "text-primary btn btn-sm btn btn-outline-primary text-danger d-flex justify-content-center" }) </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

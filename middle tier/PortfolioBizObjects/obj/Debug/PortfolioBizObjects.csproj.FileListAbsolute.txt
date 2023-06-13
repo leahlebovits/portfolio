@@ -1,0 +1,9 @@
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\bin\Debug\PortfolioBizObjects.dll
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\bin\Debug\PortfolioBizObjects.pdb
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\bin\Debug\cpuframework.dll
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\bin\Debug\cpuframework.pdb
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.CoreCompileInputs.cache
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.CopyComplete
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.dll
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.pdb
+C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.AssemblyReference.cache

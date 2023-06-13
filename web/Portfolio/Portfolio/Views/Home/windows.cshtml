@@ -1,0 +1,38 @@
+﻿@using PortfolioBizObjects
+@model bizDevSubSection
+<ul class="nav nav-pills mb-1">
+    <li class="nav-item">
+        <a class="nav-link active bg-primary text-light" data-toggle="tab" href="#video">Video</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link bg-primary text-light" data-toggle="tab" id="btnSeeCode" href="#seecode">See Code</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link bg-primary text-light" data-toggle="tab" href="#download">Download</a>
+    </li>
+</ul>
+
+
+<div class="tab-content">
+    <div class="tab-pane active container" style="height:100px" id="video">
+        <video autoplay loop width="700">
+            <source src="/Content/videos/@(Model.DevSubSectionCode).mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="tab-pane container" id="seecode">
+
+        @if (Model.ProgrammingCode != "")
+        {
+            <div class="row mt-2">
+                <div class="col-md-12" id="code">
+                    <div class="border border-primary bg-white p-2" style="font-family:Consolas"> @Html.Raw(AppUtility.AddStyleToCode(Model.ProgrammingCode))</div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="tab-pane container " id="download">
+        <a href="~/Content/downloads/@(Model.DevSubSectionCode).zip"> Download and Install</a>
+        <p>  Double Click on Setup file to install</p>
+    </div>
+</div>
+
