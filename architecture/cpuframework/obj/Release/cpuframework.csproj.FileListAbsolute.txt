@@ -4,3 +4,9 @@ C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.csprojAssem
 C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.dll
 C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.pdb
 C:\CPU2020\Zilber\Architecture\cpuframework\obj\Release\cpuframework.csproj.CoreCompileInputs.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\bin\Release\cpuframework.dll
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\bin\Release\cpuframework.pdb
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\obj\Release\cpuframework.csproj.AssemblyReference.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\obj\Release\cpuframework.csproj.CoreCompileInputs.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\obj\Release\cpuframework.dll
+C:\Users\yzilb\source\leahrepos\portfolio\Architecture\cpuframework\obj\Release\cpuframework.pdb

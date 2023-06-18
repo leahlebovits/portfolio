@@ -149,6 +149,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\bizObject.png" />
     <Content Include="images\cpuframework.png" />
+    <Content Include="images\llebovitslogo.png" />
     <Content Include="images\LZ %285%29.png" />
     <Content Include="images\Portfolio.png" />
     <Content Include="images\Recipe.1.png" />
@@ -297,7 +298,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\DevSection.cshtml" />
     <Content Include="Views\Home\db.cshtml" />
-    <Content Include="Views\Home\framework.cshtml" />
+    <Content Include="Views\Home\cpuframework.cshtml" />
     <Content Include="Views\Home\windows.cshtml" />
     <Content Include="Views\Home\web.cshtml" />
     <Content Include="Views\Home\QueryResults.cshtml" />

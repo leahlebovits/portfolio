@@ -7,3 +7,12 @@ C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.
 C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.dll
 C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.pdb
 C:\CPU2020\Zilber\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.AssemblyReference.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\bin\Debug\PortfolioBizObjects.dll
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\bin\Debug\PortfolioBizObjects.pdb
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\bin\Debug\cpuframework.dll
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\bin\Debug\cpuframework.pdb
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.AssemblyReference.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.CoreCompileInputs.cache
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.csproj.CopyComplete
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.dll
+C:\Users\yzilb\source\leahrepos\portfolio\Middle Tier\PortfolioBizObjects\obj\Debug\PortfolioBizObjects.pdb
