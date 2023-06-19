@@ -12,46 +12,35 @@
         font-weight:bolder;   
     }
 </style>
-<div class="row bg-primary">
-    <div class="col-md-3 ">
-        <h4 class=" d-flex justify-content-center text-center text-light h-100">@Model.DevSectionDesc</h4>
-    </div>
-    <div class="col-md-9 bg-light border border-primary">
-        <p class="text-center text-danger h-100">@Model.DevSectionBlurb</p>
-    </div>
+<div class="row bg-danger p-2">
+        <p class="text-xl-center text-dark font-weight-bold">@Model.DevSectionBlurb</p>
 </div>
 
 
-<div class="row mt-3">
-    <div class="col-md-2 bg-danger">
-        <div class="navbar">
+<div class="row d-flex justify-content-center">
+        <div class="navbar navbar-expand-sm">
             <ul class="navbar-nav ">
-
                 @foreach (bizDevSubSection s in Model.DevSubSections)
                 {
-                    <li class="nav-item justify-content-start">
-                        <a class="nav-link sublink font-weight-bold @linkclass"  id="a@(s.DevSubSectionCode)" subcode="@s.DevSubSectionCode " href="#"><h6>@s.DevSubSectionDesc</h6></a>
+                    <li class="nav-item">
+                        <a class="nav-link sublink font-weight-bold @linkclass"  id="a@(s.DevSubSectionCode)" subcode="@s.DevSubSectionCode " href="#"><h5>@s.DevSubSectionDesc</h5></a>
                     </li>
                     linkclass = "";
                 }
-                @if (Model.DevTechUsed != "")
+                @*@if (Model.DevTechUsed != "")
                 {
                  
                         <h6 class="bg-primary text-danger text-center"> This Page Uses: @Model.DevTechUsed </h6>
-                }
+                }*@
             </ul>
-
         </div>
-
-
-    </div>
-    <div class="col-md-10">
+</div>
         <div class="row">
             <div class="col-md-12">
-                <div id="subblurb" class="bg-secondary border-0 border-dark m-1 p-2">
+                <div id="subblurb" class="bg-secondary border-0 border-dark text-center">
                     @if (Model.DevSubSections.Count > 0)
                     {
-                        @Model.DevSubSections[0].DevSubSectionBlurb
+                        @Model.DevSubSections[0].DevSubSectionBlurb 
                     }
                 </div>
             </div>
@@ -61,9 +50,6 @@
 
             </div>
         </div>
-
-    </div>
-</div>
 @foreach (bizDevSubSection s in Model.DevSubSections)
 {
     <input type="hidden" id="blurb@(s.DevSubSectionCode)" value="@s.DevSubSectionBlurb" />
